@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+   
+}
+p.color{
+  color:red;
+}
+.grettingSection{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.greetText {
+  background: #ffffcb;
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 26px;
+  font-weight: 500;
+}
+.card-main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards {
+  width: 100%;
+  margin: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 14px;
+  transition: 0.3s all;
+}
+.cards:hover {
+  transform: scale(1.04);
+  cursor: pointer;
+}
+.subheading {
+  font-size: 14px;
+  color: grey;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+.cardInfo {
+  padding: 0 16px 16px;
+}
+.link {
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #e4e4e4;
+  padding: 6px 10px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  transition: 0.3s all;
+}
+.link:hover{
+  background-color: #000;
+  color: #fff;
+}
+.heading {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+.cardsImg img {
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 100%;
+  max-height: 330px;
+}
+.card-main > div {
+  width: calc(100% / 4 - 20px);
+}
+.incnum {
+  background: #c2f1c2;
+  display: grid;
+  place-items: center;
+  padding: 22px 0px;
+}
+.clickButton {
+  padding: 12px 30px;
+  background: #000000d9;
+  color: #fff;
+  border: unset;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.5s all;
+}
+.btn {
+  display: flex;
+  column-gap: 14px;
+}
+.incnumber {
+  margin: 0;
+  font-size: 44px;
+  background: #000;
+  color: #fff;
+  border-radius: 50%;
+  padding: 24px;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+}
+.incheading {
+  font-size: 24px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #275813;
+  margin-bottom: 40px;
+}
+.clickButton:active {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.gettime-main {
+  display: grid;
+  place-items: center;
+  padding: 23px 0;
+  background: black;
+  color: #fff;
+}
+.gettime-main p {
+  font-size: 34px;
+}
+button.gettime {
+  padding: 10px 28px;
+  border: unset;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+}
+@media screen and (max-width:992px) {
+  .card-main > div {
+    width: calc(100% / 2 - 20px);
+  }
+}
+
+@media screen and (max-width:500px) {
+  .card-main > div {
+    width: calc(100% - 20px);
+  }
+  .cards {
+    margin:20px;
+  }
+}
